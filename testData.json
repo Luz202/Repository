@@ -1,0 +1,10 @@
+{
+  "validUser": {
+    "email": "carla.arevilca+testt1222@fxreplay.com",
+    "password": "y%vtMYbh50O#cTT"
+  },
+  "invalidUser": {
+    "email": "fakeuser@example.com",
+    "password": "wrongpassword"
+  }
+}

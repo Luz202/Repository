@@ -1,0 +1,738 @@
+{
+  "config": {
+    "configFile": "D:\\REPOSITORIO.1\\PROJECT_POM\\playwright.config.ts",
+    "rootDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./report/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "LG Optimus L70 landscape version",
+        "name": "LG Optimus L70 landscape version",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "Microsoft Edge",
+        "name": "Microsoft Edge",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/REPOSITORIO.1/PROJECT_POM/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "D:/REPOSITORIO.1/PROJECT_POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1884,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.048Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-8d34e917795412fefc1a",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1435,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-2bb9539e64527e5bbbec",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "LG Optimus L70 landscape version",
+              "projectName": "LG Optimus L70 landscape version",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1953,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.018Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-2d230d3dcee4d4efa7a9",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "LG Optimus L70 landscape version",
+              "projectName": "LG Optimus L70 landscape version",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.067Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-a8aa0d4fb814c67a8563",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 7240,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.060Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-ff1256885d6066ce9331",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 4518,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.082Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b5bf8b8c7fe1ae573561",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 2490,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.044Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-6f350febba11dfa54a34",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 1783,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:55.060Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-118060fdcd7b61bc5e49",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Chrome",
+              "projectName": "Mobile Chrome",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 1503,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:58.361Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-eb4b5a60f168ec2a0d66",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Chrome",
+              "projectName": "Mobile Chrome",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1267,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:10:05.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-f3b09b989c3ad33461c5",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Safari",
+              "projectName": "Mobile Safari",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1888,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:10:05.736Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-7fe2f8f613f283c401c7",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Safari",
+              "projectName": "Mobile Safari",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1219,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:10:05.747Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-6218509cc6354313dd74",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 6,
+                  "status": "passed",
+                  "duration": 1442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:09:58.786Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-7de52c62175709e56353",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Microsoft Edge",
+              "projectName": "Microsoft Edge",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 7,
+                  "status": "passed",
+                  "duration": 887,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:10:05.714Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-f452a98d9d313540bb62",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Getting Started should contain table of contents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 1637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:10:06.172Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-485066e519b4953c821a",
+          "file": "example.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Should show Page Object Model article",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 1254,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-04T15:10:04.461Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-36ca3402771cacd304e9",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-04T15:09:54.196Z",
+    "duration": 18256.987,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

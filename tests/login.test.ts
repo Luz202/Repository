@@ -14,4 +14,5 @@ test('Login inválido en FXReplay', async ({ loginPage }) => {
   await loginPage.login(testData.invalidUser.email, testData.invalidUser.password);
 
   await assertLoginFailure(loginPage.page);   
+   
 });

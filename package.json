@@ -1,17 +1,33 @@
 {
   "name": "project_pom",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000R\u0000e\u0000p\u0000o\u0000s\u0000i\u0000t\u0000o\u0000r\u0000y\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.3.0",
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.9.2"
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "dotenv": "^17.2.3"
-  }
+    "cucumber": "^6.0.7",
+    "dotenv": "^17.2.3",
+    "playwright": "^1.57.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luz202/Repository.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Luz202/Repository/issues"
+  },
+  "homepage": "https://github.com/Luz202/Repository#readme"
 }

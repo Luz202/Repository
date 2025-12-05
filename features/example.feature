@@ -10,6 +10,3 @@ Feature: Login en FXReplay
     When inicio sesión con usuario inválido
     Then debería ver un mensaje de error de login
 
-
- 
-

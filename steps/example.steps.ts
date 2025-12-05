@@ -1,4 +1,3 @@
-// steps/example.steps.ts
 import { Given, When, Then, Before, After } from "@cucumber/cucumber";
 import { chromium, Browser, BrowserContext, Page } from "playwright";
 
@@ -11,11 +10,11 @@ let context: BrowserContext;
 let page: Page;
 let loginPage: LoginPage;
 
-// ========================= HOOKS =========================
+
 Before(async () => {
   browser = await chromium.launch({
     headless: false,
-    slowMo: 300
+    slowMo: 200
   });
 
   context = await browser.newContext();
@@ -29,13 +28,11 @@ After(async () => {
   await browser.close();
 });
 
-// ========================= GIVEN =========================
 
 Given("que navego a la página de login", async () => {
   await loginPage.navigate();
 });
 
-// ========================= WHEN =========================
 
 When("inicio sesión con usuario válido", async () => {
   await loginPage.login(testData.validUser.email, testData.validUser.password);
@@ -45,7 +42,6 @@ When("inicio sesión con usuario inválido", async () => {
   await loginPage.login(testData.invalidUser.email, testData.invalidUser.password);
 });
 
-// ========================= THEN =========================
 
 Then("debería ver el dashboard cargado", async () => {
   await assertLoginSuccess(page);

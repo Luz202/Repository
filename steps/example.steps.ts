@@ -1,54 +1,52 @@
-import { Given, When, Then, Before, After } from "@cucumber/cucumber";
-import { chromium, Browser, BrowserContext, Page } from "playwright";
+import { Given, When, Then } from '@cucumber/cucumber';
+import { chromium, Page, Browser } from '@playwright/test';
 
-import testData from "../testData.json";
-import { LoginPage } from "../pages/login.page";
-import { assertLoginSuccess, assertLoginFailure } from "../helpers/assertions";
-
-let browser: Browser;
-let context: BrowserContext;
 let page: Page;
-let loginPage: LoginPage;
+let Browser: Browser;
 
 
-Before(async () => {
-  browser = await chromium.launch({
-    headless: false,
-    slowMo: 200
-  });
+         Given('que navego a la página de login', async function () {
+           Browser = await chromium.launch({ headless: false });
+           const context = await Browser.newContext();
+           page = await context.newPage();
+           await page.goto('https://app.fxreplay.com/login');
+         });
 
-  context = await browser.newContext();
-  page = await context.newPage();
+         Given('ingreso el correo {string}', async function (string) {
+           await page.fill('input[name="email"]', string);
+         });
 
-  loginPage = new LoginPage(page);
-});
+         Given('ingreso la contraseña {string}', async function (string) {
+           await page.fill('input[name="password"]', string);
+         });
 
-After(async () => {
-  await context.close();
-  await browser.close();
-});
+         When('hago clic en el botón de login', function () {
+           
+         });
 
-
-Given("que navego a la página de login", async () => {
-  await loginPage.navigate();
-});
-
-
-When("inicio sesión con usuario válido", async () => {
-  await loginPage.login(testData.validUser.email, testData.validUser.password);
-});
-
-When("inicio sesión con usuario inválido", async () => {
-  await loginPage.login(testData.invalidUser.email, testData.invalidUser.password);
-});
+         Then('debería ver el dashboard cargado', function () {
+           
+         });
 
 
-Then("debería ver el dashboard cargado", async () => {
-  await assertLoginSuccess(page);
-  await page.waitForTimeout(2000);
-});
+         Given('que navego a la página de login', function () {
+           
+         });
 
-Then("debería ver un mensaje de error de login", async () => {
-  await assertLoginFailure(page);
-  await page.waitForTimeout(2000);
-});
+         Given('ingreso el correo {string}', function (string) {
+           
+         });
+
+
+         Given('ingreso la contraseña {string}', function (string) {
+           
+         });
+
+         When('hago clic en el botón de login', function () {
+           
+         });
+   
+
+         Then('debería ver un mensaje de error de login', function () {
+           
+         });

@@ -7,11 +7,15 @@ import { expect, Page } from '@playwright/test';
 export const assertLoginFailure = async (page: Page) => {
   await expect(page).toHaveURL(/login/);
 };*/
-export const assertLoginSuccess = async (page: Page) => {
-  await expect(page.getByRole("navigation")).toBeVisible({ timeout: 8000 });
-};
 
-export const assertLoginFailure = async (page: Page) => {
-  await expect(page.getByRole("alert")).toBeVisible({ timeout: 8000 });
-};
+export async function assertLoginSuccess(page: Page) {
+  await expect(page.getByText("Replay")).toBeVisible({ timeout: 5000 });
+}
+
+export async function assertLoginFailure(page: Page) {
+  await expect(page.getByText("Invalid email or password")).toBeVisible({
+    timeout: 5000
+  });
+}
+
 
